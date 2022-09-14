@@ -1,0 +1,41 @@
+
+.container{
+  display: flex;
+  justify-content: space-between;
+}
+.container .title {
+  width: 233px;
+  display: flex;
+  font-size: 18px;
+  line-height: 150%;
+  margin-top: 30px;
+}
+.title .titleleft {
+  color: rgba(0, 0, 0, 0.38);
+}
+.title .titleright {
+  color: rgba(0, 0, 0, 0.87);
+  margin-left: 3px;
+}
+.rowmap {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 1px;
+}
+.contentcard {
+  margin-left: 1px;
+  width: 100%;
+}
+.contentleft{
+  margin-top: 80px;
+}
+.contentright{
+  margin-top: 80px;
+}
+.map{
+  margin-top: 30px;
+}
+.form{
+  margin-top: 30px;
+}

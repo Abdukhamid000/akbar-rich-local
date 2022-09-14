@@ -1,0 +1,36 @@
+.content {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}
+
+.open {
+  transform: rotate(90deg);
+  transition: all 0.5s ease;
+}
+
+.close {
+  transition: all 0.5s ease;
+}
+
+.passage {
+  height: 0;
+  opacity: 0;
+  display: block;
+  transition: all 1s ease-in-out;
+}
+
+.passageActive {
+  display: table;
+  height: 70px;
+  overflow: hidden;
+  transition: all 1s ease-in-out;
+}

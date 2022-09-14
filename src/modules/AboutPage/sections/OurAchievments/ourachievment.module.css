@@ -1,0 +1,97 @@
+.OurAchievmentTitle {
+  font-weight: 700;
+  font-size: 30px;
+  padding-left: 200px;
+}
+
+.certificatesWrapper {
+  margin-top: 170px;
+  position: relative;
+}
+
+.certificateDiv {
+  position: relative;
+  justify-content: center;
+  gap: 24px;
+}
+
+.certificateDiv:nth-child(1) {
+  position: absolute;
+}
+
+.certificate:nth-child(2) {
+  position: absolute;
+  top: 150px;
+  left: 15%;
+}
+
+.certificate:nth-child(3) {
+  position: absolute;
+  top: -140px;
+  left: 63%;
+}
+
+.achievmentDescriptionDiv {
+  display: flex;
+  justify-content: right;
+}
+
+.achievmentDescription {
+  max-width: 600px;
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+@media (max-width: 1200px) {
+  .certificate:nth-child(2) {
+    left: 5%;
+  }
+  .certificate:nth-child(3) {
+    left: 65%;
+  }
+  .certificate {
+    width: 283px;
+    height: 600px;
+  }
+}
+
+@media (max-width: 992px) {
+  .OurAchievmentTitle {
+    padding-left: 0;
+  }
+  .certificate:nth-child(2) {
+    left: -9%;
+  }
+  .certificate:nth-child(3) {
+    left: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .certificate {
+    width: 223px;
+    height: 500px;
+  }
+}
+
+@media (max-width: 620px) {
+  .certificate:nth-child(2) {
+    position: initial;
+  }
+  .certificate:nth-child(3) {
+    position: initial;
+  }
+  .certificate {
+    width: 300px;
+    height: 400px;
+    margin: 0 auto;
+  }
+  .OurAchievmentTitle {
+    text-align: center;
+  }
+  .certificatesWrapper {
+    margin-top: 100px;
+  }
+}

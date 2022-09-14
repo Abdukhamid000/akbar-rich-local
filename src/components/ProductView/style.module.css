@@ -1,0 +1,93 @@
+.product {
+  margin-top: 50px;
+  position: relative;
+  cursor: pointer;
+}
+
+.product .image {
+  position: relative;
+  height: 480px;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  /* background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); */
+  background: #184623;
+  color: #f1f1f1;
+  width: 100%;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.product:hover .overlay {
+  opacity: 1;
+}
+
+.product .body {
+  padding: 15px 0;
+  text-align: center;
+}
+
+.product .body h2 {
+  font-family: Montserrat;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+.product .body p {
+  margin-top: 8px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+}
+
+.colorCheck {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.colorCheck div {
+  height: 35px;
+  width: 35px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.colorCheck .active::after {
+  content: ' ';
+  width: 39px;
+  height: 39px;
+  position: absolute;
+  z-index: -1;
+  top: -4px;
+  left: -4px;
+  background-color: #474747;
+  border-radius: 50%;
+}
+
+.colorCheck .active {
+  border: 2px solid white;
+}
+
+.bgRedClr {
+  background: #96361d;
+}
+
+.bgBlueClr {
+  background: #008985;
+}
+
+.bgGreyClr {
+  background: #cdd0cf;
+}

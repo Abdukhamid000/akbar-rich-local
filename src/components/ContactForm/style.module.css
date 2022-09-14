@@ -1,0 +1,49 @@
+.form {
+  width: 100%;
+  height: 590px;
+  box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.1);
+}
+.header {
+  font-size: 20px;
+  line-height: 150%;
+  text-align: center;
+  font-weight: 600;
+  padding-top: 30px;
+}
+ .line {
+  width: 123px;
+  position: relative;
+  left: 34%;
+  margin-top: 20px;
+  margin-bottom: 35px;
+}
+.input {
+  width: 86%;
+  height: 52px;
+  margin: 15px 27px;
+}
+.formcomment {
+  height: 103px;
+  width: 86%;
+  margin: 15px 27px;
+}
+.addfile {
+  align-items: center;
+  margin-left: 26px;
+  display: flex;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+}
+.addbutton {
+  margin: 57px auto;
+  margin-bottom: 37px;
+  width: 266px;
+  height: 60px;
+  background: #a6a6a6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  color: #fff;
+}

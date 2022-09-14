@@ -1,0 +1,18 @@
+.mapwrap{
+  width: 100%;
+}
+.mapinfo {
+  padding-top: 23px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.mapinfo .infotitle {
+  font-size: 16px;
+  line-height: 150%;
+}
+.mapinfo .info {
+  font-size: 18px;
+  line-height: 150%;
+} 

@@ -1,0 +1,234 @@
+.economyClassContainer {
+  margin-top: 100px;
+  position: relative;
+}
+
+.economyClassGrid {
+  display: grid;
+  grid-template-columns: 45% 55%;
+}
+
+.economyClassFirstGrid {
+  background-image: url('../../../../../public/images/ellipseImg.png');
+}
+
+.economyClassSecondGrid {
+  overflow: hidden;
+  background: #203625;
+}
+
+.economyClassDoors {
+  display: flex;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.economyClassDoorsImg {
+  position: absolute;
+  bottom: 0;
+  left: 303px;
+}
+
+.economyClassCard {
+  width: 809px;
+  height: 731px;
+  background-color: #fff;
+  position: absolute;
+  top: 77px;
+  left: 203px;
+  display: flex;
+  flex-direction: column;
+  padding: 0 48px;
+  box-shadow: -2px 6px 17px -5px rgba(0, 0, 0, 0.74);
+  border-bottom: 2px solid #004911;
+  bottom: 0;
+  right: 0;
+  border-right: 4px solid #004911;
+}
+
+.economyClassCardBorderLeft::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 230px;
+  width: 227px;
+  border-left: 2px solid #004911;
+  border-top: 2px solid #004911;
+}
+
+.economyClassCardTitle {
+  color: #000000;
+  font-weight: 700;
+  font-size: 35px;
+  padding-top: 30px;
+}
+
+.economyClassCardDescription {
+  color: #525252;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 35px;
+  padding-top: 10px;
+}
+
+.economyClassCardLink {
+  font-size: 20px;
+  padding-top: 25px;
+  color: #525252;
+  width: fit-content;
+  font-weight: 500;
+}
+
+.economyClassCardLink:hover {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+/* Media */
+
+@media (max-width: 1130px) {
+  .economyClassGrid {
+    grid-template-columns: 50% 50%;
+  }
+  .economyClassCard {
+    position: absolute;
+    width: 65%;
+    height: 80%;
+    top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .economyClassDoorsImg {
+    left: 300px;
+    width: 50%;
+  }
+
+  .economyClassCardTitle {
+    font-size: 32px;
+    padding-top: 50px;
+  }
+  .economyClassCardDescription {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .economyClassDoorsImg {
+    width: 45%;
+  }
+}
+
+@media (max-width: 985px) {
+  .economyClassDoors {
+    margin-top: 20px;
+  }
+  .economyClassDoorsImg {
+    width: 40%;
+  }
+}
+
+@media (max-width: 935px) {
+  .economyClassDoors {
+    margin-top: 40px;
+  }
+}
+
+@media (max-width: 900px) {
+  .economyClassGrid {
+    height: 750px;
+    background: #fbfbfd;
+  }
+  .economyClassFirstGrid {
+    display: none;
+  }
+  .economyClassSecondGrid {
+    display: none;
+  }
+  .economyClassCard {
+    width: 90%;
+    height: 65%;
+    position: absolute;
+    left: 40px;
+    display: flex;
+  }
+  .economyClassDoorsImg {
+    width: 70%;
+    position: absolute;
+    left: 100px;
+  }
+  .economyClassCardTitle {
+    font-size: 28px;
+  }
+  .economyClassCardDescription {
+    font-size: 18px;
+    line-height: 25px;
+  }
+}
+
+@media (max-width: 700px) {
+  .economyClassGrid {
+    height: 650px;
+  }
+}
+
+@media (max-width: 652px) {
+  .economyClassGrid {
+    height: 750px;
+  }
+  .economyClassCard {
+    width: 90%;
+    position: absolute;
+    left: 30px;
+    top: 100px;
+  }
+  .economyClassCardLink {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 528px) {
+  .economyClassGrid {
+    height: 580px;
+  }
+  .economyClassCardTitle {
+    font-size: 25px;
+  }
+  .economyClassCardDescription {
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .economyClassCard {
+    position: absolute;
+    top: 60px;
+    height: 75%;
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 460px) {
+  .economyClassGrid {
+    height: 600px;
+  }
+  .economyClassDoorsImg {
+    position: absolute;
+    left: 60px;
+  }
+  .economyClassCard {
+    left: 22px;
+  }
+}
+
+@media (max-width: 360px) {
+  .economyClassGrid {
+    height: 550px;
+  }
+}
+
+@media (max-width: 314px) {
+  .economyClassDoors {
+    display: none;
+  }
+}

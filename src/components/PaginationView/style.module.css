@@ -1,0 +1,52 @@
+.paginationContainer {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.collector {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.collector span {
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.prevBtn,
+.nextBtn {
+  cursor: pointer;
+  display: flex;
+  height: 44px;
+  width: 44px;
+  background-color: #c8c8c8de;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.activeStep {
+  border: 1px solid #004911;
+  color: #004911;
+  height: 40px;
+  width: 40px;
+}
+
+.activeBtn {
+  background-color: #004911;
+}
+
+.exInfo {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+}

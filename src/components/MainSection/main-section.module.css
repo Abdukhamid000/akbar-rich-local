@@ -1,0 +1,346 @@
+.service-title-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 76px;
+  height: 60px;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.service-title-horizontal-line {
+  width: 10%;
+  margin-top: 20px;
+  border-color: #d4d4d4;
+}
+
+.service-title {
+  font-size: 30px;
+}
+
+.cards_container {
+  height: 233px;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 100px;
+}
+
+.card_text {
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 1%;
+  font-weight: 500;
+}
+
+.card {
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  max-width: 260px;
+  box-sizing: border-box;
+}
+
+.cards-block-hr-line {
+  border: none;
+}
+
+.contacting-block {
+  max-width: 790px;
+  text-align: center;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 80px;
+  margin-bottom: 50px;
+}
+
+.contacting-block_text {
+  font-size: 25px;
+  font-family: 'Montserrat';
+  line-height: 148%;
+  letter-spacing: 1%;
+  align-self: center;
+  margin-bottom: 37px;
+}
+
+/* image and textblock */
+
+.image-textblock-container-middle {
+  margin-top: 50px;
+  display: flex;
+  position: relative;
+}
+
+.image-textblock-container {
+  margin-top: 50px;
+  display: flex;
+}
+
+.image-block {
+  position: relative;
+  height: 381px;
+}
+
+.image-block img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-width: 100%;
+  right: 15px;
+}
+
+.textblock-middle .description-container .textblock_description {
+  justify-content: center;
+  padding-left: 100px;
+}
+
+.textblock-middle .textblock-heading {
+  justify-self: start;
+  justify-content: flex-start;
+  text-align: center;
+}
+
+.textblock-middle h1 {
+  padding-right: 13rem;
+}
+
+.image-block-middle {
+  position: relative;
+  height: 404px;
+}
+
+.image-block-middle img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  max-width: 100%;
+}
+
+.textblock_description {
+  display: flex;
+  font-size: 18px;
+  font-family: 'Montserrat';
+  line-height: 150%;
+  letter-spacing: 1%;
+  margin-top: 20px;
+}
+
+.textblock_description:hover {
+  text-decoration: underline;
+  margin-left: 1rem;
+  transition: 1s;
+}
+
+.description-dash {
+  width: 22px;
+  height: 1px;
+  align-self: center;
+  margin-right: 0.5em;
+}
+
+@media screen and (max-width: 1274px) {
+  .contacting-block_text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .image-textblock-container .image-block {
+    position: relative;
+    height: 376.29px;
+    /* width: 480px; */
+  }
+
+  .textblock-middle .description-container .textblock_description {
+    justify-content: flex-start;
+    padding-left: unset;
+  }
+
+  .textblock-middle .textblock-heading {
+    text-align: unset;
+  }
+
+  .textblock-middle h1 {
+    padding-right: unset;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .image-block-middle {
+    height: 300px;
+    width: 100%;
+  }
+
+  .image-block-middle img {
+    max-width: 100%;
+  }
+
+  .textblock_description {
+    font-size: 13px;
+  }
+
+  .textblock-heading {
+    font-size: 18px;
+  }
+
+  .description-dash {
+    width: 16px;
+    height: 1px;
+    align-self: center;
+    margin-right: 0.5em;
+  }
+
+  .service-title {
+    font-size: 24px;
+  }
+
+  .image-textblock-container .image-block {
+    position: relative;
+    height: 282.22px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .service-title {
+    font-size: 20px;
+  }
+
+  .cards_container {
+    display: grid;
+    height: fit-content;
+    grid-template-columns: repeat(1, 2fr);
+  }
+
+  .card {
+    max-width: 220px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .card_text {
+    font-size: 15px;
+    line-height: 150%;
+    letter-spacing: 1%;
+    font-weight: 500;
+  }
+
+  .image-textblock-container
+    .textblock
+    .description-container
+    .textblock_description {
+    font-size: 14px;
+    justify-content: center;
+  }
+
+  .image-textblock-container-middle
+    .textblock-middle
+    .description-container
+    .textblock_description {
+    font-size: 14px;
+    justify-content: center;
+  }
+
+  .cards-block-hr-line {
+    border: none;
+    margin-top: 15px;
+  }
+
+  .contacting-block {
+    margin-top: 40px;
+  }
+
+  .image-textblock-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .image-textblock-container-middle {
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    height: unset;
+    overflow: auto;
+    width: auto;
+    position: relative;
+  }
+
+  .image-textblock-container-middle .image-block-middle {
+    flex: unset;
+    max-width: 100%;
+    position: relative;
+    height: 404px;
+  }
+
+  .image-block-middle img {
+    position: unset;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .image-textblock-container .image-block {
+    position: relative;
+    flex: unset;
+    width: 100%;
+    max-width: 100%;
+    height: 381px;
+  }
+
+  .image-textblock-container .image-block img {
+    position: unset;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+  .image-textblock-container .textblock {
+    flex: unset;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .image-textblock-container-middle .textblock-middle {
+    flex: unset;
+    width: 100%;
+    text-align: center;
+    max-width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .textblock {
+    margin-top: 15px;
+  }
+
+  .textblock .description-container {
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .textblock .textblock-heading {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .image-textblock-container .image-block {
+    height: 329px;
+  }
+}
+
+@media screen and (max-width: 362px) {
+  .image-textblock-container .image-block {
+    height: 283px;
+  }
+}

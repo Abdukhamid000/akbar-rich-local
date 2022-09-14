@@ -1,0 +1,177 @@
+/* Sidebar */
+.sidebarNav,
+.subNav {
+  height: 100vh;
+  position: fixed;
+  left: -150%;
+  top: 0;
+  z-index: 115;
+  background: #FFFFFF;
+}
+
+.sidebarNav {
+  width: 42.1vw;
+  transition: 850ms;
+}
+
+.sidebarNav.active {
+  left: 0;
+  transition: 300ms;
+}
+
+.sidebarContainer,
+.productLinks,
+.siteLinks,
+.subNavContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebarContainer {
+  width: 100%;
+  padding: 30px 0px 27px 0;
+}
+
+.btn {
+  border: none;
+  cursor: pointer;
+  background: inherit;
+}
+
+.crossBtn {
+  width: 25px;
+}
+
+.searchInput {
+  border: none;
+  outline: none;
+  font-size: 16px;
+  margin: 30px 0 10px;
+}
+
+.subNav_hr,
+.horizontalRule {
+  border: 1px solid rgba(156, 156, 156, 0.3);
+}
+
+.productLinks {
+  align-items: flex-start;
+  margin: 20px 0px 15px 0;
+}
+
+.siteLinks {
+  align-items: flex-start;
+  margin: 20px 0 40px;
+}
+
+.productLink_label {
+  width: 100%;
+  cursor: pointer;
+}
+
+.productLink_label :hover {
+  background: #6999E1;
+}
+
+.productLink_label p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 18px;
+  padding: 10px 0 10px 20%;
+  color: rgba(0, 0, 0, 0.87);
+  position: relative;
+}
+
+.productLink_label p span {
+  color: #FFFFFF;
+  position: absolute;
+  right: 20px;
+}
+
+.siteLink_label {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.68);
+  margin-bottom: 14px;
+}
+
+.phoneNum span{
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  margin-right: 20px;
+}
+
+.phoneNum p {
+  margin-bottom: 10px;
+}
+
+.phoneNum,
+.crossBtn,
+.searchInput,
+.horizontalRule,
+.siteLinks {
+  margin-left: 20%;
+}
+
+/* SubMenu */
+.subNav {
+  width: 58vw;
+  transition: 10ms;
+  color: rgb(34, 37, 37);
+}
+
+.subNav.active {
+  left: 42vw;
+  transition: 10ms;
+}
+
+.subNavContainer {
+  margin: 58px 100px 10px 0px;
+}
+
+.subNav_title {
+  font-weight: 600;
+  font-size: 23px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 0px 0px 27px 24px;
+}
+
+.subNav_grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 700px;
+  gap: 20px;
+  margin: 30px 0 0 24px;
+}
+
+.subNav_card {
+  display: flex;
+  position: relative;
+  max-width: 216px;
+  cursor: pointer;
+}
+
+.card_title {
+  position: absolute;
+  color: #ffffff;
+  bottom: 10px;
+  left: 10px;
+ }
+
+ .hoverEffect:after {
+  display:block;
+  content: '';
+  border-bottom: solid 1px rgba(0, 0, 0, 0.87);  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.hoverEffect:hover:after {
+  transform: scaleX(1);
+}

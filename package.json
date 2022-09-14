@@ -1,20 +1,37 @@
 {
-  "name": "akbar-rich-local",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "akbar-rich",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "analyze": "ANALYZE=true next build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Abdukhamid000/akbar-rich-local.git"
+  "dependencies": {
+    "@algolia/autocomplete-core": "^1.6.3",
+    "@next/bundle-analyzer": "^12.1.6",
+    "aos": "^2.3.4",
+    "i18next": "^21.8.5",
+    "i18next-browser-languagedetector": "^6.1.4",
+    "mapbox-gl": "^2.8.2",
+    "next": "^12.1.7-canary.12",
+    "next-pwa": "^5.5.2",
+    "react": "18.0.0",
+    "react-axios": "^2.0.5",
+    "react-dom": "18.0.0",
+    "react-i18next": "^11.16.9",
+    "react-icons": "^4.3.1",
+    "react-reveal": "^1.2.2",
+    "react-slick": "^0.29.0",
+    "react-stacked-carousel": "^1.1.4",
+    "slick-carousel": "^1.8.1",
+    "stickybits": "^2.1.1",
+    "swr": "^1.3.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Abdukhamid000/akbar-rich-local/issues"
-  },
-  "homepage": "https://github.com/Abdukhamid000/akbar-rich-local#readme"
+  "devDependencies": {
+    "eslint": "8.13.0",
+    "eslint-config-next": "12.1.5"
+  }
 }

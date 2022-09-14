@@ -1,0 +1,16 @@
+.aboutVideoWrapper {
+  margin: 100px 0;
+}
+
+.videoDescription {
+  text-align: center;
+}
+
+.videoDescription .videotext {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 44px;
+  margin: 50px auto;
+  max-width: 792px;
+}

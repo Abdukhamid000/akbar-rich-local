@@ -1,0 +1,139 @@
+.footer {
+  width: 100%;
+  background: radial-gradient(101.02% 101.02% at 1.2% 0%, #393939 1.04%, #000000 100%);
+  color: #FFFFFF;
+  margin-top: 50px;
+}
+
+.footerContainer,
+.footerMain,
+.footer_bottom,
+.socialMedia {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerContainer {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footerMain {
+  flex-direction: row;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.hr_rule {
+  border: 1px solid #2B2B2B;
+}
+
+.footer_bottom {
+  align-items: center;
+}
+
+.footerMain_payment,
+.footerColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footerMain_payment {
+  gap: 20px;
+  margin-right: 40px;
+}
+
+.footerColumn {
+  gap: 10px;
+  margin-top: 22px;
+}
+
+.payment_methods {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.payment_methods div {
+  cursor: pointer;
+}
+
+.socialMedia {
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.btn {
+  border: 1px solid #184623;
+  border-radius: 3px;
+  padding: 10px;
+  background: radial-gradient(101.02% 101.02% at 1.2% 0%, #393939 1.04%, #000000 100%);
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.btn16 {
+  border: 1px solid #004911;
+  align-items: center;
+  padding: 10px 8px 10px 16px;
+  margin: 10px 0px;
+}
+
+.btn16,
+.textGray16,
+.textWhite16,
+.columnTitle,
+.textGray {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  align-items: center;
+  cursor: pointer;
+  color: #FFFFFF;
+}
+
+.textGray16 {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.textWhite16 {
+  font-weight: 600;
+}
+
+.columnTitle {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.textGray {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.hoverEffect:after {
+  display:block;
+  content: '';
+  border-bottom: solid 1px rgba(255, 255, 255, 0.68);  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+
+.hoverEffect:hover:after {
+  transform: scaleX(1);
+}
+
+.footer_desciption {
+  width: 280px;
+}

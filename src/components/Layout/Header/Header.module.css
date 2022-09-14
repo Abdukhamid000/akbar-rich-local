@@ -1,0 +1,159 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 111;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+
+.headerContainer,
+.headerLeft,
+.headerRight,
+.translateBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerContainer {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 4px 20px;
+}
+
+.headerLeft {
+  gap: 50px;
+  margin-right: 140px;
+}
+
+.headerRight {
+  gap: 35px;
+}
+
+.btn {
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  background: inherit;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+}
+
+.langContainer {
+  position: relative;
+}
+
+.translateBtn {
+  font-size: 20px;
+  gap: 14px;
+}
+
+.langMenu {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background: #6d6a6a;
+}
+
+.langMenuInActive {
+  display: none;
+}
+
+.langBtn {
+  font-size: 16px;
+  padding: 10px 12px;
+}
+
+.langBtn:hover {
+  background: #000;
+}
+
+.searchBtn {
+  margin-right: 4px;
+}
+
+.contactBtn {
+  font-size: 18px;
+  line-height: 22px;
+  border-radius: 3px;
+  background: #c8c8c8;
+  padding: 13px;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+@media (max-width: 1200px) {
+  .headerContainer {
+    padding: 4px 20px;
+  }
+  .headerLeft {
+    gap: 30px;
+  }
+  .headerRight {
+    gap: 25px;
+  }
+  .contactBtn {
+    font-size: 16px;
+    line-height: 16px;
+    background: #c8c8c8;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 1025px) {
+  .headerLeft {
+    margin-right: 0px;
+  }
+  .contactBtn {
+    display: none;
+  }
+  .sidebarNav {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    transition: 850ms;
+    z-index: 115;
+  }
+}
+
+@media (max-width: 700px) {
+  .headerContainer a {
+    width: 100px;
+    height: 50px;
+  }
+  .sidebarNav {
+    width: 100vw;
+  }
+}
+
+@media (max-width: 620px) {
+  .btn {
+    width: 20px;
+    height: 20px;
+  }
+  .translateBtn {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .headerContainer a {
+    width: 80px;
+    height: 40px;
+  }
+  .headerRight {
+    display: none;
+  }
+}

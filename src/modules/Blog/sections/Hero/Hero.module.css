@@ -1,0 +1,115 @@
+.hero{
+    height: auto;
+    position: relative;
+    width: calc(100% - 240px);
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 121px;
+    margin-bottom: 100px;
+    background-image: url("/images/blog-image.png");
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.bgBlur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    z-index: 6;
+    background: rgba(57, 57, 57, 0.5);
+    backdrop-filter: blur(80px);
+}
+.contentContainer{
+    width: 50%;
+    height: auto;
+    padding: 40px 24px 38px 50px;
+    z-index: 10;
+}
+.title{
+    color: #FFFFFF;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 45px;
+    letter-spacing: 1%;
+    text-align: left;
+}
+.description{
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 1%;
+    color: rgba(255, 255, 255, 0.87);
+    text-align: left;
+}
+.imageContainer{
+    width: 50%;
+    height: 320px;
+    z-index: 10;
+}
+.imageBox{
+    width: 486px;
+    height: 385px;
+    margin-top: 20px;
+    box-shadow: 0 5px 25px rgba(0,0,0,0.7);
+}
+.image{
+    width: 100%;
+    height: 100%;
+}
+@media screen and (max-width: 999px) {
+    .hero{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    .container{
+        flex-direction: column;
+    }
+    .contentContainer{
+        height: auto;
+        width: 100%;
+    }
+    .title{
+        font-size: 1.5rem;
+        line-height: 1.75rem;
+    }
+    .description{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        margin-top: 10px;
+    }
+    .imageContainer{
+        width: 100%;
+        height: auto;
+        padding: 0 50px;
+    }
+    .imageBox{
+        display: none;
+    }
+}
+@media screen and (max-width: 544px) {
+    .hero{
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    .contentContainer,
+    .imageContainer{
+        padding: 10px;
+    }
+    .imageBox{
+        display: block;
+        height: auto;
+        width: 100%;
+        margin: 0;
+    }
+    .title{
+        font-size: 16;
+        line-height: 1.75rem;
+    }
+}

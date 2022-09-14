@@ -1,0 +1,22 @@
+.doorsContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 800px;
+  background: #545454;
+}
+
+.doorsImg {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  padding: 60px;
+  position: relative;
+}
+
+/* Media */
+@media (max-width: 1115px) {
+  .doorsImg {
+    padding: 50px;
+  }
+}

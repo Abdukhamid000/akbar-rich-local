@@ -1,0 +1,137 @@
+.logosWrapper {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    margin-top: 50px;
+    justify-content: center;
+  }
+  
+  .ourTeamTiltle {
+    margin-top: 80px;
+    color: #000;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+  }
+  
+  .borderLine {
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    width: 132px;
+    margin: 20px auto;
+  }
+  
+  .logo:not(:last-child) {
+    border-right: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+  }
+  .logo:nth-child(4) {
+    border-right: none;
+  }
+  .logo:nth-child(5) {
+    border-bottom: none;
+  }
+  .logo:nth-child(6) {
+    border-bottom: none;
+  }
+  .logo:nth-child(7) {
+    border-bottom: none;
+  }
+  
+  .logo {
+    padding: 50px;
+  }
+  
+  .allView {
+    color: #004911;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 14.5px;
+    cursor: pointer;
+  }
+  
+  @media (max-width: 1000px) {
+    .logosWrapper {
+      grid-template-columns: auto auto auto;
+    }
+  
+    .logo:not(:last-child) {
+      border-right: 1px solid #dadada;
+      border-bottom: 1px solid #dadada;
+    }
+    .logo:nth-child(3) {
+      border-right: none;
+    }
+    .logo:nth-child(6) {
+      border-right: none;
+    }
+    .logo:nth-child(7) {
+      border-bottom: none;
+    }
+    .logo:nth-child(8) {
+      border-right: 1px solid #dadada;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .logosWrapper {
+      grid-template-columns: auto auto;
+    }
+  
+    .logo:not(:last-child) {
+      border-right: 1px solid #dadada;
+      border-bottom: 1px solid #dadada;
+    }
+  
+    .logo:nth-child(2) {
+      border-right: none;
+    }
+    .logo:nth-child(4) {
+      border-right: none;
+    }
+    .logo:nth-child(3) {
+      border-right: 1px solid #dadada;
+    }
+    .logo:nth-child(6) {
+      border-right: none;
+    }
+    .logo:nth-child(7) {
+      border-bottom: none;
+    }
+    .logo:nth-child(8) {
+      border-right: none;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    .logosWrapper {
+      grid-template-columns: auto ;
+    }  
+    .logo:not(:last-child) {
+      border-right: none;
+      border-bottom: 1px solid #dadada;
+    }
+  
+    .logo:nth-child(2) {
+      border-right: none;
+    }
+    .logo:nth-child(4) {
+      border-right: none;
+    }
+    .logo:nth-child(3) {
+      border-right:none;
+    }
+    .logo:nth-child(6) {
+      border-right: none;
+    }
+    .logo:nth-child(7) {
+      border-bottom: 1px solid #dadada;
+    }
+    .logo:nth-child(8) {
+      border-right: none;
+    }
+  }
+  

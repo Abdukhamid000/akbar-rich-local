@@ -1,0 +1,41 @@
+.cardTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.title{
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: 0.01em;
+    color: rgba(0, 0, 0, 0.87);
+    margin: 15px 0;
+}
+.link{
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 1%;
+    color: #004911;
+    margin-bottom: 40px;
+}
+
+@media screen and (max-width: 544px) {
+    .cards{
+        width: 100%;
+        padding: 0 20px;
+        margin-top: 10px;
+    }
+    .container{
+        justify-content: center;
+    }
+    .title{
+        font-size: 26px;
+        line-height: 20px;
+        margin: 10px 0;
+    }
+    .link{
+        font-size: 16px;
+        margin-bottom: 10px;
+    } 
+}

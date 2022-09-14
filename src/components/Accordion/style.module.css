@@ -1,0 +1,27 @@
+.accordion {
+  max-width: 600px;
+  margin: 2rem auto;
+}
+
+.accordionTitle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  cursor: pointer;
+  border-bottom: 1px solid #eaeaea;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+}
+
+.accordionTitle,
+.accordionContent {
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 700px) {
+  .accordion {
+    width: 90%;
+  }
+}

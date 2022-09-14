@@ -1,0 +1,98 @@
+/* <------> */
+.btn {
+  width: 266px;
+  height: 60px;
+  margin: 0 auto;
+  cursor: pointer;
+  background: #a6a6a6;
+  position: relative;
+  border-radius: 3px;
+}
+
+.btn:hover {
+  background: #004911;
+  transition: all 0.3s ease;
+}
+
+.btn .btntext {
+  color: #fff;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  line-height: 60px;
+}
+
+.BorderTopBottom:before {
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 3px;
+  top: -6px;
+  left: -7px;
+  background: #000;
+  transition: all 0.5s ease;
+}
+
+.BorderTopBottom:after {
+  content: '';
+  position: absolute;
+  width: 0px;
+  height: 3px;
+  bottom: -6px;
+  right: -7px;
+  background: #000;
+  transition: all 0.5s ease;
+}
+
+.BorderLeftRight:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -7px;
+  width: 3px;
+  height: 0px;
+  background: #000;
+  transition: all 0.5s ease;
+}
+
+.BorderLeftRight:after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  right: -7px;
+  width: 3px;
+  height: 0px;
+  background: #000;
+  transition: all 0.5s ease;
+}
+
+.btn:hover .BorderTopBottom:before,
+.btn:hover .BorderTopBottom:after {
+  width: 280px;
+  transition: all 0.2s ease;
+}
+
+.btn:hover .BorderLeftRight:before,
+.btn:hover .BorderLeftRight:after {
+  height: 70px;
+  transition: all 0.2s ease;
+}
+
+/* media queries */
+
+@media screen and (max-width: 780px) {
+  .wrapper {
+    width: 180px;
+  }
+  .wrapper .btn {
+    margin: 15px 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .btn {
+    margin: 15px 0;
+    width: 220px;
+    height: 40px;
+  }
+}

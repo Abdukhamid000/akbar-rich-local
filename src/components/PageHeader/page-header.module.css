@@ -1,0 +1,43 @@
+.header {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../../../public/images/main_image.jpg);
+  height: 472px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.heading_big {
+  font-weight: 700, bold;
+  font-size: 30px;
+  line-height: 40px;
+  width: 392.33px;
+  height: 80px;
+  font-family: 'Montserrat';
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 991px) {
+  .heading_big {
+    font-weight: 700, bold;
+    font-size: 24px;
+    line-height: 40px;
+    width: 392.33px;
+    height: 80px;
+    font-family: 'Montserrat';
+    text-align: center;
+    letter-spacing: 0.01em;
+    color: #ffffff;
+  }
+}

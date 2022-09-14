@@ -1,0 +1,15 @@
+.aboutDescriptionDiv {
+  max-width: 588px;
+}
+
+.aboutInfo {
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width:769px) {
+    .aboutDescriptionDiv {
+        padding: 20px;
+    }
+}

@@ -1,0 +1,169 @@
+.aboutInfo {
+  position: relative;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+.aboutDescriptionDiv {
+  position: relative;
+  max-width: 588px;
+}
+
+.triangelBorder {
+  width: 140px;
+  border-color: transparent transparent #184623 transparent;
+  border-style: solid;
+  border-width: 0px 50px 40px 0px;
+  height: 0px;
+  color: #ffffff;
+}
+
+.aboutImgInfo {
+  display: flex;
+  align-items: center;
+  justify-content: row-reverse;
+  height: 40px;
+}
+
+.secondtitle {
+  position: relative;
+  margin-bottom: 15px;
+  color: rgba(0, 0, 0, 0.87);
+  letter-spacing: 0.01em;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+.secondtitle,
+.aboutDescription {
+  margin-left: 24px;
+}
+
+.aboutDescription {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgba(0, 0, 0, 0.87);
+  padding: 20px 20px 20px 0;
+}
+
+.amountOfProjectList {
+  line-height: 30px;
+  border-top: 1px solid #184623;
+  margin-top: 20px;
+  display: flex;
+  text-align: center;
+  border-bottom: 1px solid #184623;
+}
+
+.amountOfProjectList div:not(:last-child) {
+  border-right: 1px solid #184623;
+}
+
+.amountOfProject {
+  padding: 30px 10px;
+  width: 203px;
+  height: 160px;
+}
+
+.amountOfProject b {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 150%;
+}
+
+.amountOfProject p {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.backgroundImg {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.backgroundBlock {
+  position: relative;
+  bottom: 30px;
+  width: 228px;
+  background-color: #184623;
+  z-index: -1;
+}
+
+.backgroundArrowImg {
+  z-index: -1;
+}
+
+@media (max-width: 992px) {
+  .aboutDescription {
+    background-color: #ffffff;
+    padding: 5px 10px;
+  }
+
+  .backgroundArrowImg {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .backgroundImg {
+    display: none;
+  }
+
+  .triangelBorder {
+    border-width: 0px 0px 40px 0px;
+  }
+
+  .secondtitle,
+  .aboutDescription {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 600px) {
+  .amountOfProject {
+    padding: 30px 10px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .amountOfProject p {
+    font-size: 15px;
+  }
+
+  .aboutDescriptionDiv,
+  .aboutImg {
+    padding: 0 20px;
+  }
+
+  .secondtitle {
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 5px;
+  }
+
+  .aboutDescription {
+    font-size: 16;
+    padding: 10px 0;
+  }
+}
+
+@media (max-width: 355px) {
+  .amountOfProjectList {
+    display: grid;
+    grid-template-columns: auto;
+    border: none;
+    border-right: none;
+  }
+
+  .amountOfProjectList div:not(:last-child) {
+    border-right: none;
+    height: 100px;
+  }
+}

@@ -1,0 +1,73 @@
+.ExprienceSection h2 {
+  margin-top: 60px;
+  padding: 20px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+
+  /* Dark 87% */
+
+  color: rgba(0, 0, 0, 0.87);
+  position: relative;
+}
+.ExprienceSection h2::after {
+  content: '';
+  position: absolute;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 131.67px;
+}
+
+.exp_item {
+  margin-top: 50px;
+  border-right: 0.5px solid #004911;
+  padding: 20px;
+}
+.exp_item:last-child {
+  border: none;
+}
+.exp_item p {
+  font-weight: 500;
+  font-size: 16px;
+  width: 282px;
+  line-height: 150%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.68);
+}
+.exp_item h3 {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 150%;
+
+  letter-spacing: 0.01em;
+  margin: 25px 0 10px 0;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+@media (max-width: 960px) {
+  .exp_item:last-child {
+    border: none;
+  }
+  .exp_item:nth-child(2) {
+    border: none;
+  }
+}
+@media (max-width: 768px) {
+  .exp_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+  }
+  .exp_item p {
+    text-align: center;
+  }
+}

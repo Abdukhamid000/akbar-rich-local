@@ -1,0 +1,40 @@
+.container {
+  padding: 13px 20px;
+  background: #f2f2f2;
+  border-radius: 3px;
+  display: flex;
+}
+
+.dropDown {
+  position: relative;
+  cursor: pointer;
+  padding: 8px 10px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin: 0 20px;
+}
+.verticalLine {
+  width: 1px;
+  height: auto;
+  background-color: #d2d2d2;
+}
+
+.dropMenu {
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+  width: max-content;
+  z-index: 2;
+  top: 59px;
+  left: -40px;
+  position: absolute;
+  list-style-type: none;
+  border-radius: 5px;
+  padding: 16px 20px;
+  background-color: white;
+}
+
+.dropMenu li {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 40px;
+}

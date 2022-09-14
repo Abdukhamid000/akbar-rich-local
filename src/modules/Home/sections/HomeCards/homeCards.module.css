@@ -1,0 +1,33 @@
+.homeCardsHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 107px;
+}
+
+.homeCardTitle {
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.bottomLine {
+  width: 125px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+
+/* Media */
+@media (max-width: 1115px) {
+  .homeCardTitle {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 500px) {
+  .homeCardTitle {
+    font-size: 25px;
+  }
+}

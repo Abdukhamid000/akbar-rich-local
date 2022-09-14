@@ -1,0 +1,77 @@
+.thirdTitle {
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 20px;
+  margin: 50px 0 50px 80px;
+}
+
+.hiddenNumber {
+  position: absolute;
+  bottom: -15%;
+  left: 0;
+  opacity: 0.08;
+  font-weight: 700;
+  font-size: 78px;
+  line-height: 95px;
+}
+
+.dataWrapper {
+  position: relative;
+}
+
+.backgroundBlockRight {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  padding: 800px 115px;
+
+  background-color: #184623;
+  z-index: -1;
+}
+
+.secondtitle,
+.aboutDescription {
+  margin-left: 24px;
+}
+
+.aboutDescriptionDiv {
+  position: relative;
+  max-width: 588px;
+}
+
+.aboutInfoDiv {
+  align-items: center;
+  justify-content: center;
+}
+
+.aboutInfoDiv:nth-child(2) {
+  flex-direction: row-reverse;
+}
+
+.aboutInfoDiv:nth-child(4) {
+  flex-direction: row-reverse;
+}
+
+.aboutDescription {
+  background-color: #ffffff;
+  padding: 20px 20px 20px 0;
+}
+
+.secondtitle {
+  position: relative;
+  margin-bottom: 15px;
+  color: rgba(0, 0, 0, 0.87);
+  letter-spacing: 0.01em;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+}
+
+@media (max-width: 1200px) {
+  .aboutDescriptionDiv {
+    margin-top: 50px;
+  }
+  .backgroundBlockRight {
+    display: none;
+  }
+}

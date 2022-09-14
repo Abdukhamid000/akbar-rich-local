@@ -1,0 +1,126 @@
+.productsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 70px;
+}
+
+.productsHeaderTitle {
+  text-align: center;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.bottomLine {
+  width: 125px;
+  height: 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
+}
+
+.firstProductGrid {
+  display: grid;
+  grid-template-columns: 59% 41%;
+  margin-top: 70px;
+  padding: 0px 80px;
+  overflow: hidden;
+}
+
+.thirdProductGrid {
+  overflow: hidden;
+}
+
+.gridElement {
+  object-fit: cover;
+  position: relative;
+}
+
+.gridElementImg span {
+  width: 100% !important;
+}
+
+.imgTextContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imgText {
+  color: #fff;
+  opacity: 0.85;
+  font-size: 23px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 30px;
+}
+
+.secondProductGrid {
+  display: grid;
+  grid-template-columns: 41% 59%;
+  grid-column-gap: 10px;
+  margin-top: 10px;
+  padding: 0px 80px;
+  overflow: hidden;
+}
+
+.thirdProductGrid {
+  display: grid;
+  grid-template-columns: 59% 41%;
+  margin-top: 10px;
+  padding: 0px 80px;
+}
+
+/* Media CSS */
+@media (max-width: 1115px) {
+  .firstProductGrid {
+    grid-column-gap: 10px;
+    padding: 0 40px;
+  }
+  .secondProductGrid {
+    padding: 0 40px;
+  }
+  .thirdProductGrid {
+    grid-column-gap: 10px;
+    padding: 0 40px;
+  }
+  .imgText {
+    font-size: 20px;
+    bottom: 20px;
+  }
+}
+
+@media (max-width: 750px) {
+  .firstProductGrid,
+  .secondProductGrid,
+  .thirdProductGrid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .secondProductGrid,
+  .thirdProductGrid {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .imgText {
+    bottom: 10px;
+    padding: 0 10px;
+  }
+}
+
+@media (min-width: 1235px) {
+  .firstProductGrid {
+    grid-column-gap: 10px;
+  }
+  .thirdProductGrid {
+    grid-column-gap: 10px;
+  }
+}
+
+.productsFlexContainer {
+  display: flex;
+}

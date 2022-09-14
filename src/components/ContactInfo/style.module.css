@@ -1,0 +1,36 @@
+.header {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+}
+.headertext {
+  margin-top: 20px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 30px;
+  letter-spacing: 0.01em;
+}
+.headerbtn {
+  display: flex;
+  margin-top: 30px;
+}
+.btnleft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 60px;
+  background: #e7e7e7;
+  border-radius: 3px;
+  margin-right: 24px;
+}
+.btnright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 60px;
+  background: #e7e7e7;
+  border-radius: 3px;
+  margin-right: 24px;
+}

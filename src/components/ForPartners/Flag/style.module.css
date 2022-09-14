@@ -1,0 +1,59 @@
+.flagSection {
+  margin-top: 50px;
+  min-height: 660.22px;
+  width: 100%;
+  background: url('../../../../public/images/back.png') no-repeat;
+}
+
+.flagSection p {
+  font-weight: 500;
+  margin-top: 20px;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.68);
+}
+
+.flag {
+  align-items: center;
+  min-height: 660.22px;
+  justify-content: center;
+}
+
+.flagSection button {
+  margin-top: 30px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  width: 280px;
+  padding: 15px 0;
+  border: none;
+  color: #ffffff;
+  background-color: #a6a6a6;
+}
+
+@media (max-width: 992px) {
+  .flagSection p {
+    font-size: 15px;
+    line-height: 23px;
+  }
+
+  .flagSection button {
+    max-width: 150px;
+    padding: 5px 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .flag {
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 700px) {
+  .flagSection p {
+    font-size: 15px;
+    line-height: 22px;
+  }
+}

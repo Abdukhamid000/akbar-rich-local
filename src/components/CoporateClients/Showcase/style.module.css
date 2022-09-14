@@ -1,0 +1,16 @@
+.showcaseSection {
+  background: url('../../../../public/images/biznes.png') no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 472px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+
+  text-align: center;
+  letter-spacing: 0.01em;
+}

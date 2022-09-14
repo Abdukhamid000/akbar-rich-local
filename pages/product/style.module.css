@@ -1,0 +1,334 @@
+.sliderContainer {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+  background-position: 50% 50%;
+}
+
+.sliderContainer .slick-dots {
+  background-color: rebeccapurple;
+}
+
+.dots {
+  background-color: rebeccapurple;
+}
+
+.sliderContainer h1 {
+  color: white;
+  font-family: Montserrat;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+  background-size: 100% 100%;
+}
+
+.slickContainer ul li {
+  width: 78px;
+  height: 50px;
+}
+
+.slickContainer ul li button::before {
+  content: ' ';
+  width: 78px;
+  height: 3px;
+  background-color: white;
+  border-radius: 20%;
+}
+
+.productDetailContainer {
+  padding-top: 40px;
+}
+
+.productMapView {
+  border-radius: 3px;
+  margin-bottom: 10px;
+  height: 111px;
+  width: 92px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eeeeee;
+}
+
+.productMapView img {
+  width: 50%;
+}
+
+.productScale {
+  background: #eeeeee;
+  border-radius: 3px;
+  padding: 20px 0;
+}
+
+.productDecription {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.btnGreenFilled {
+  color: white;
+  background: #004911;
+  border-radius: 3px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 16px 25px;
+}
+
+.productFooter {
+  margin-top: 30px;
+  display: flex;
+}
+
+.productFooter .iconsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-left: 25px;
+}
+
+.systemContainer {
+  background: radial-gradient(
+      185.89% 1183.09% at 13.31% -15.46%,
+      #505050 0%,
+      #041107 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+}
+
+.systemContainer {
+  padding: 50px 0;
+}
+
+.systemContainer .header {
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+.systemContainer .header h2 {
+  margin-bottom: 10px;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+}
+
+.systemContainer .paragraph {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.doorsContainer {
+  margin-top: 50px;
+}
+
+.doorsContainer .doorItem p {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.featuresContainer {
+  margin-top: 80px;
+}
+
+.featuresContainer .featuresItem {
+  padding: 65px 30px;
+}
+
+.featuresContainer .featuresItem h2 {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+  text-align: left;
+}
+
+.featuresContainer .featuresItem h1 {
+  position: relative;
+}
+
+.featuresContainer .featuresItem span {
+  position: absolute;
+  font-family: Montserrat;
+  font-size: 78px;
+  font-weight: 700;
+  line-height: 95px;
+  letter-spacing: 0.01em;
+  opacity: 0.05;
+  bottom: -10px;
+  left: 0;
+}
+
+.featuresContainer .featuresItem p {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  color: rgba(0, 0, 0, 0.68);
+  margin-top: 20px;
+}
+
+.sectionTitle {
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+}
+
+.exProducts {
+  padding-top: 100px;
+}
+
+.exProducts .footer {
+  margin-top: 80px;
+  width: 100%;
+  text-align: center;
+}
+
+.section {
+  padding-top: 80px;
+}
+
+.titleBottomBordered {
+  margin: auto;
+  margin-bottom: 50px !important;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #a6a6a6;
+  width: fit-content;
+}
+
+.productValue .overAllRating {
+  padding: 20px 50px;
+}
+
+.productValue .overAllRating h1 {
+  font-family: Montserrat;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 55px;
+  letter-spacing: 0.01em;
+}
+
+.productValue .overAllRating button {
+  width: 100%;
+}
+
+.productValue .overAllRating span {
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.68);
+}
+
+.productValue .overAllRating p {
+  margin-top: 30px;
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.68);
+}
+
+.starRatingContainer .starIconBox {
+  margin: 30px 0;
+  position: relative;
+  display: flex;
+}
+
+.starRatingContainer .starIconBox .star {
+  position: relative;
+  width: 83px;
+  text-align: center;
+}
+
+.starRatingContainer .starIconBox .star::after,
+.starRatingContainer .starIconBox .star::before {
+  position: absolute;
+  content: ' ';
+  height: 5px;
+  width: 50%;
+  background-color: #e6e6e6;
+  z-index: -1;
+}
+
+.starRatingContainer .starIconBox .active::after,
+.starRatingContainer .starIconBox .active::before {
+  background-color: #4f4f4f;
+}
+
+.starRatingContainer .starIconBox .active svg path {
+  fill: #4f4f4f;
+}
+
+.starRatingContainer .starIconBox .star::before {
+  left: 0;
+  top: 27%;
+}
+.starRatingContainer .starIconBox .star::after {
+  right: 0;
+  top: 27%;
+}
+
+.starRatingContainer .starIconBox .star span {
+  display: block;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0.01em;
+}
+
+.clientsReccomendation {
+  height: 450px;
+  overflow-y: scroll;
+}
+
+.clientsReccomendation {
+  padding: 20px 50px;
+}
+
+.clientsReccomendation .reccomendation {
+  margin-top: 30px;
+}
+
+.clientsReccomendation .reccomendation .header {
+  margin-bottom: 18px;
+}
+
+.clientsReccomendation .reccomendation .header b {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+}
+
+.clientsReccomendation .reccomendation .header span {
+  margin-left: 30px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.38);
+}
+
+.clientsReccomendation .reccomendation p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  color: rgba(0, 0, 0, 0.68);
+}

@@ -1,0 +1,83 @@
+.ourTeam {
+  background: radial-gradient(
+    101.02% 101.02% at 1.2% 0%,
+    #545454 1.04%,
+    #282828 100%
+  );
+  margin-top: 50px;
+  padding: 50px;
+}
+
+.ourTeamTiltle {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+}
+
+.card {
+  position: relative;
+  z-index: 2;
+  margin-top: 50px;
+}
+
+.borderLine {
+  border: 1px solid rgba(255, 255, 255, 0.68);
+  width: 132px;
+  margin: 20px auto;
+}
+
+.cadWrapper {
+  /* display: grid;
+  grid-template-columns: auto auto auto auto; */
+  gap: 35px;
+  justify-content: center;
+}
+
+.cardTitle {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.cardParagraph {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 0.68);
+}
+
+.cardTitleDiv {
+  border-left: 3px solid #ffd700;
+  padding-left: 20px;
+}
+
+.cardImgBackGround {
+  position: absolute;
+  top: -5%;
+  left: -5%;
+  border-top: 203px solid #ffd700;
+  border-right: 180px solid transparent;
+  z-index: -1;
+}
+/* 
+@media (max-width: 1000px) {
+  .cadWrapper {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media (max-width: 790px) {
+  .cadWrapper {
+    grid-template-columns: auto auto ;
+  }
+}
+
+@media (max-width: 600px) {
+  .cadWrapper {
+    display: flex;
+    overflow: auto;
+  }
+} */

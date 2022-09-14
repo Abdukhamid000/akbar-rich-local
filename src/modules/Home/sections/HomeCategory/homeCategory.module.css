@@ -1,0 +1,374 @@
+.productsCategory {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  padding: 50px;
+}
+
+.productsCategoryLeft {
+  display: flex;
+  flex-direction: column;
+}
+
+.productsCategoryLeftTitle {
+  font-size: 30px;
+  font-weight: 700;
+  color: #000000;
+  line-height: 40px;
+  width: 50%;
+}
+
+.productsCategoryLeftText {
+  font-size: 18px;
+  font-weight: 500;
+  color: #000000;
+  opacity: 0.75;
+  line-height: 30px;
+  width: 80%;
+  padding-right: 10px;
+  padding-top: 25px;
+}
+
+.prevBtn,
+.nextBtn {
+  cursor: pointer;
+  display: flex;
+  height: 44px;
+  width: 44px;
+  background-color: #c8c8c8de;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.activeBtn {
+  background-color: #004911;
+}
+
+.notActive {
+  cursor: unset;
+}
+
+.carouselCardButtons {
+  display: flex;
+  align-items: center;
+  grid-gap: 20px;
+  margin-top: 20px;
+}
+
+.carouselCardButtonsActive {
+  display: flex;
+}
+
+.carouselCardButtonsNone {
+  display: none;
+}
+
+.sliderContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.productsCategoryRightContainer {
+  display: flex;
+  position: relative;
+}
+
+.productsCategoryRightContainer:hover .productsCategoryRightCardTitle {
+  text-decoration: underline;
+  text-underline-position: under;
+}
+
+.productsCategoryRightContainer:hover .productsCategoryCardImg {
+  /* -webkit-filter: blur(5px);
+  filter: blur(5px); */
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in;
+}
+
+.productsCategoryRightCardElements {
+  position: absolute;
+  bottom: 20px;
+  left: 8%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  letter-spacing: 0.5px;
+}
+
+.productsCategoryRightCardTitle {
+  font-size: 20px;
+  font-weight: 400;
+  padding-right: 5px;
+}
+
+.arrowForwardIcon {
+  font-size: 22px;
+}
+
+.carouselLine {
+  width: 880px;
+  height: 2px;
+  background-color: #cccccc;
+  margin-top: 20px;
+  margin-left: 380px;
+}
+
+.carouselElementsLine {
+  width: 40px;
+}
+
+.activeLine {
+  background-color: #fff;
+}
+
+.ArrowIcon {
+  position: absolute;
+  top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ddd;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  z-index: 99;
+  outline: 3px solid #fff;
+}
+
+.prevArrow:hover,
+.nextArrow:hover {
+  background: #004911;
+  outline: 3px solid #fff;
+}
+.nextArrow {
+  transition: 0.3s ease;
+  background: #004911;
+}
+.arrowIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  fill: #fff;
+  stroke: none;
+  transition: 0.3s ease;
+}
+.slickArrow::before {
+  display: none;
+}
+
+.prevBtn {
+  transform: rotate(90deg);
+  transform-origin: center;
+}
+
+.ArrowLeftIconWrap {
+  padding: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 80%;
+  left: -380px;
+  z-index: 99;
+}
+
+.ArrowLeftIcon {
+  display: inline-block;
+  display: inline-block;
+  border-radius: 50%;
+  padding: 2px 5px;
+  cursor: pointer;
+  z-index: 99;
+}
+
+.ArrowRightIconWrap {
+  padding: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 80%;
+  right: 1130px;
+  z-index: 2;
+}
+
+.ArrowRightIcon {
+  display: inline-block;
+  border-radius: 50%;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+
+/* Media */
+
+@media (max-width: 4460px) {
+  .ArrowLeftIconWrap {
+    top: 80%;
+    left: -400px;
+  }
+  .ArrowRightIconWrap {
+    top: 80%;
+    right: 1180px;
+  }
+}
+
+@media (max-width: 1395px) {
+  .ArrowLeftIconWrap {
+    left: -400px;
+  }
+  .ArrowRightIconWrap {
+    right: 1160px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .ArrowLeftIconWrap {
+    left: -345px;
+  }
+  .ArrowRightIconWrap {
+    right: 1000px;
+  }
+}
+
+@media (max-width: 1220px) {
+  .productsCategoryCardImg {
+    width: 350px;
+  }
+}
+
+@media (max-width: 1125px) {
+  .productsCategoryCardImg {
+    width: 300px;
+  }
+  .ArrowLeftIconWrap {
+    top: 80%;
+    left: -44%;
+  }
+  .ArrowRightIconWrap {
+    top: 80%;
+    right: 125%;
+  }
+}
+
+@media (max-width: 1052px) {
+  .ArrowLeftIconWrap,
+  .ArrowRightIconWrap {
+    top: 88%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .carouselCardButtonsActive {
+    display: none;
+  }
+  .carouselCardButtonsNone {
+    display: flex;
+    margin-left: 40px;
+    align-items: center;
+    justify-content: center;
+  }
+  .productsCategory {
+    display: unset;
+  }
+  .productsCategoryLeft {
+    margin-left: 40px;
+    margin-top: 40px;
+    align-items: center;
+  }
+  .productsCategoryLeftText {
+    text-align: center;
+  }
+  .productsCategoryLeftTitle {
+    width: unset;
+  }
+  .productsCategoryRightContainer {
+    margin: 30px 40px 0px 30px;
+  }
+  .productsCategoryCardImg {
+    width: 88%;
+  }
+  .productsCategoryRightCardTitle {
+    font-size: 25px;
+  }
+  .arrowForwardIcon {
+    font-size: 25px;
+  }
+  .ArrowLeftIconWrap {
+    top: 45%;
+    left: 0;
+  }
+  .ArrowRightIconWrap {
+    top: 45%;
+    right: 0;
+  }
+}
+
+@media (max-width: 830px) {
+  .productsCategoryCardImg {
+    width: 85%;
+  }
+}
+
+@media (max-width: 800px) {
+  .doorsImg {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .productsCategoryRightContainer {
+    margin: 30px 0px 20px 0px;
+  }
+  .productsCategoryRightCardElements {
+    left: 25%;
+  }
+  .productsCategoryRightCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .productsCategoryCardImg {
+    width: 60%;
+  }
+  .carouselCardButtonsNone {
+    margin-left: 0;
+  }
+  .doorsImg {
+    width: 100%;
+    padding: 30px;
+  }
+  .productsCategoryRightCardTitle {
+    font-size: 20px;
+  }
+  .arrowForwardIcon {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 500px) {
+  .productsCategoryLeftTitle {
+    font-size: 25px;
+  }
+  .productsCategoryLeftText {
+    font-size: 15px;
+    line-height: 25px;
+    padding-top: 15px;
+  }
+  .productsCategoryCardImg {
+    width: 85%;
+  }
+  .carouselCardButtons {
+    margin-top: 0px;
+  }
+  .productsCategoryRightCardElements {
+    left: 14%;
+  }
+}
+
+@media (max-width: 425px) {
+  .productsCategoryLeft {
+    margin-left: 0px;
+  }
+}

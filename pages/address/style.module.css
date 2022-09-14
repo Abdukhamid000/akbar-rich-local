@@ -1,0 +1,139 @@
+.map_box {
+  padding: 120px;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.content {
+  position: relative;
+}
+
+.map {
+  width: 1120px;
+  height: 585px;
+  position: relative;
+  overflow: hidden;
+}
+.mapData {
+  display: flex;
+}
+.title {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 32px;
+  margin: 110px 0 30px;
+}
+.tab {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  height: 80px;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.icon {
+  cursor: pointer;
+  margin: 0 15px;
+}
+.dropdown {
+  position: relative;
+}
+
+.dropdown_box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 220px;
+  gap: 25px;
+  background: #f0f0f0;
+  border-radius: 5px;
+  height: 60px;
+  padding: 15px 25px;
+  font-size: 20px;
+  line-height: 150%;
+  cursor: pointer;
+  user-select: none;
+}
+.options {
+  width: 220px;
+  position: absolute;
+  background-color: #fff;
+  padding: 8px;
+  margin-top: 8px;
+  box-shadow: 0px 4px 15px rgba(83, 83, 83, 0.1);
+}
+.option {
+  display: flex;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 8px;
+  top: 8px;
+  height: 48px;
+  z-index: 110;
+}
+.option:hover {
+  background-color: #f0f0f0;
+}
+.option_value {
+  width: 100%;
+  display: block;
+}
+
+.route {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.map_data {
+  display: flex;
+  gap: 24px;
+}
+
+.office_img {
+  z-index: -1;
+}
+
+.col {
+  display: block;
+  margin-top: 30px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 500;
+  font-size: 18px;
+  font-weight: 500;
+  font-size: 18px;
+}
+.content_title {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: rgba(0, 0, 0, 0.68);
+}
+
+.col p {
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.87);
+  display: flex;
+  gap: 24px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+  margin-top: 30px;
+}

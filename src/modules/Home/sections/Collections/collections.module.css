@@ -1,0 +1,184 @@
+.collectionsContainer {
+  background-color: #214028;
+  z-index: 1;
+  margin-top: 100px;
+  background-image: url('../../../../../public/images/doorCollectionTopImg1.png');
+  background-repeat: no-repeat;
+}
+
+.collectionsFlexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  background-image: url('../../../../../public/images/doorCollectionTopImg2.png');
+  background-position: right;
+  background-repeat: no-repeat;
+  background-position-y: top;
+}
+
+.collectionsFlexTitle {
+  font-weight: 700;
+  color: #fff;
+  font-size: 40px;
+  line-height: 60px;
+  text-align: center;
+  padding-top: 60px;
+  width: 50%;
+  z-index: 2;
+}
+
+.collectionsFlexDescription {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #b7c2ba;
+  padding-top: 30px;
+  width: 50%;
+  z-index: 2;
+}
+
+.collectionsButton {
+  cursor: pointer;
+  color: white;
+  background-color: #184623;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 54px;
+  border: none;
+  transition: all 0.2s linear;
+  margin-top: 50px;
+}
+
+.greyButton {
+  background-color: #a6a6a6;
+}
+
+.collectionsButton:hover {
+  background-color: #104e20;
+}
+
+.greyButton:hover {
+  background: #727272;
+}
+
+.collectionsButtonSpan {
+  color: #fff;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+.topLeftImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.topRightImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.collectionDoorContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.DoorCollectionImg {
+  height: 550px;
+  z-index: 2;
+}
+
+.doorImg5 {
+  padding-top: 150px;
+}
+
+.doorImg4 {
+  padding-top: 100px;
+}
+
+.doorImg3 {
+  padding-top: 50px;
+}
+
+.doorsCollectionBottomImg {
+  position: absolute;
+  bottom: -5px;
+  width: 100%;
+}
+
+.collectionsDoorTitle {
+  margin-top: 100px;
+  text-align: center;
+  color: #000000;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.doorCollectionRow {
+  margin-bottom: 60px;
+}
+
+/* Media */
+@media (max-width: 1115px) {
+  .collectionsContainer {
+    background-size: 30%;
+  }
+  .collectionsFlexContainer {
+    background-size: 60%;
+  }
+  .collectionsFlexTitle {
+    font-size: 35px;
+    line-height: 50px;
+    width: 60%;
+  }
+  .collectionsFlexDescription {
+    font-size: 20px;
+    width: 60%;
+  }
+}
+
+@media (max-width: 790px) {
+  .collectionsContainer,
+  .collectionsFlexContainer {
+    background-image: none;
+  }
+  .collectionsFlexTitle,
+  .collectionsFlexDescription {
+    width: 80%;
+  }
+}
+
+@media (max-width: 596px) {
+  .collectionsFlexTitle,
+  .collectionsFlexDescription {
+    width: 90%;
+  }
+}
+
+@media (max-width: 532px) {
+  .collectionsFlexTitle,
+  .collectionsFlexDescription {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .collectionsFlexTitle {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .collectionsFlexDescription {
+    font-size: 16px;
+    line-height: 25px;
+  }
+}

@@ -1,0 +1,110 @@
+.cardSection {
+  width: 100%;
+  padding: 100px 0;
+
+  background-image: url('../../../../public/images/line.png'),
+    radial-gradient(101.02% 101.02% at 1.2% 0%, #545454 1.04%, #282828 100%);
+  background-repeat: no-repeat;
+}
+
+.card h2 {
+  text-align: center;
+  color: #fff;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-between;
+  min-height: 375px;
+  width: 100%;
+}
+
+.cards div {
+  align-items: center;
+  padding: 30px;
+  padding: 30px;
+  width: 282px;
+  height: 334px;
+
+  background: #ffffff;
+  border-radius: 5px;
+}
+
+.cards div:nth-child(2) {
+  align-self: flex-end;
+}
+
+.cards div:last-child {
+  align-self: flex-end;
+}
+
+.cards span {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 32px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #004911;
+}
+
+.cards h3 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.87);
+  margin: 10px 0px;
+}
+
+.cards p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.68);
+  margin: 10px 0px;
+}
+
+.card button {
+  margin-top: 90px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: rgba(255, 255, 255, 0.87);
+  padding: 16px 16px 16px 24px;
+  cursor: pointer;
+  background: radial-gradient(
+      101.02% 101.02% at 1.2% 0%,
+      #545454 1.04%,
+      #282828 100%
+    )
+    /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border: 1px solid #ffffff;
+
+  border-radius: 3px;
+}
+
+@media (max-width: 1200px) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 40px;
+  }
+  .cards div {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}

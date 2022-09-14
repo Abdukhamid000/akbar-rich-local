@@ -1,0 +1,109 @@
+.forPartner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.forPartner p {
+  background-color: #fff;
+  position: absolute;
+  max-width: 644px;
+  width: 100%;
+
+  padding: 10px 15px;
+  top: 45%;
+  left: 40%;
+  transform: translate(0%, -50%);
+  z-index: 1;
+
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 36px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.68);
+}
+
+.forPartner h2 {
+  font-weight: 700;
+
+  font-size: 30px;
+  line-height: 40px;
+  letter-spacing: 0.01em;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.forPartner button {
+  height: 60px;
+  padding: 0 40px;
+  position: absolute;
+  bottom: 20%;
+  left: 40%;
+  border: none;
+  outline: none;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #ffffff;
+  background: #a6a6a6;
+  border-radius: 3px;
+}
+.forPartner span {
+  position: absolute;
+  bottom: 0;
+  left: 20%;
+}
+
+@media (max-width: 1214px) {
+  .forPartner p {
+    padding: 5px 5px;
+    width: 100%;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.01em;
+  }
+  .forPartner button {
+    font-size: 16px;
+    padding: 0 10px;
+    bottom: 0px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* .none {
+    flex-direction: column-reverse;
+  }
+  .forPartner p {
+    margin-top: 20px;
+
+    position: static;
+  }
+  .forPartner button {
+    position: static;
+  }
+  .forPartner span {
+    display: none;
+  }
+  .forPartner h2 {
+    position: static;
+  } */
+  .forPartner p {
+    padding: 5px 5px;
+    width: 100%;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+  }
+  .forPartner button {
+    font-size: 14px;
+    padding: 0 5px;
+    bottom: 0px;
+    height: 30px;
+  }
+  .forPartner h2 {
+    font-size: 20px;
+  }
+}
